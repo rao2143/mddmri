@@ -1,0 +1,1 @@
+function v = vecs_flipud(a)fields = fieldnames(a);for n = 1:length(fields)    f = fields{n};    v.(f) = flipud(a.(f));end

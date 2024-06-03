@@ -1,0 +1,1 @@
+function s = vecs_length(a)s = sqrt(vecs_scalarprod(a,a));

@@ -1,0 +1,1 @@
+function angle = vecs_angle(a,b)angle = acos(vecs_scalarprod(a,b)./(vecs_length(a).*vecs_length(b)));

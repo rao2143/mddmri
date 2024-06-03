@@ -1,0 +1,1 @@
+function b = vecs_invert(a)fields = {'x','y','z'};for n = 1:length(fields)    f = fields{n};    b.(f) = -a.(f);end

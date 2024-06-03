@@ -1,0 +1,1 @@
+function v = vecs_cat(dim,a,b)fields = fieldnames(a);for n = 1:length(fields)    f = fields{n};    v.(f) = cat(dim,a.(f),b.(f));end

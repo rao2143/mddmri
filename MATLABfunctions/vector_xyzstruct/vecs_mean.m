@@ -1,0 +1,1 @@
+function s = vecs_mean(a,dim)if nargin == 1    dim = 1;endfields = fieldnames(a);for n = 1:numel(fields)    field = fields{n};    s.(field) = mean(a.(field),dim);end

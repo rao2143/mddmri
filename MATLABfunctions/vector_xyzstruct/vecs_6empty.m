@@ -1,0 +1,1 @@
+function t = vecs_6empty()fields = {'xx','yy','zz','xy','xz','yz'};for n = 1:length(fields)    f = fields{n};    t.(f) = [];end

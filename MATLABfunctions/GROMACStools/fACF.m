@@ -1,0 +1,1 @@
+function acf = fACF(traj,N)sz = size(traj);acf = zeros(N,sz(2));for n = 1:N    Nsum = sz(1)-n+1;        ind1 = 1:Nsum;    ind2 = n:sz(1);                acf(n,:) = 1/Nsum*sum(traj(ind1,:).*traj(ind2,:),1);end

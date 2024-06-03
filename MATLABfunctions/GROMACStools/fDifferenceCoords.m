@@ -1,0 +1,1 @@
+function coord = fDifferenceCoords(coord1,coord2)coord.x = coord2.x - coord1.x;coord.y = coord2.y - coord1.y;coord.z = coord2.z - coord1.z;if isfield(coord1,'t')    coord.t = coord1.t;end

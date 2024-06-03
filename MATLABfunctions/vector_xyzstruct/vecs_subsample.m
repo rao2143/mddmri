@@ -1,0 +1,1 @@
+function b = vecs_subsample(a,ind_cell)Ndim = length(ind_cell);fields = {'x','y','z'};for n = 1:length(fields)    f = fields{n};    if Ndim == 1        b.(f) = a.(f)(ind_cell{1});    elseif Ndim == 2        b.(f) = a.(f)(ind_cell{1},ind_cell{2});    endend

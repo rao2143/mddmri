@@ -1,0 +1,1 @@
+function u = vecs_norm(r)s = vecs_length(r);fields = {'x','y','z'};for n = 1:length(fields)    f = fields{n};    u.(f) = r.(f)./s;end

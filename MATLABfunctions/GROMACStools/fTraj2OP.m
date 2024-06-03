@@ -1,0 +1,1 @@
+function op = fTraj2OP(uvec)saupe = fTraj2Saupe(uvec);eigvals = eig([saupe.xx saupe.xy saupe.xz    saupe.xy saupe.yy saupe.yz    saupe.yz saupe.yz saupe.zz]);[~,ind] = max(abs(eigvals));op = eigvals(ind);

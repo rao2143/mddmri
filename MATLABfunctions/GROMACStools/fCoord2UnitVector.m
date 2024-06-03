@@ -1,0 +1,1 @@
+function coord_out = Coord2UnitVector(coord_in)coord_out.r = sqrt(coord_in.x.^2 + coord_in.y.^2 + coord_in.z.^2);coord_out.x = coord_in.x./coord_out.r;coord_out.y = coord_in.y./coord_out.r;coord_out.z = coord_in.z./coord_out.r;if isfield(coord_in,'t')    coord_out.t = coord_in.t;end

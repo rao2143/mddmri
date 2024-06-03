@@ -1,0 +1,1 @@
+function r_f2 = vecs_proj(r_f1,f2)fields = {'x','y','z'};for n = 1:length(fields)    f = fields{n};    r_f2.(f) = vecs_scalarprod(r_f1,f2.(f));end

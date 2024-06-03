@@ -1,0 +1,1 @@
+function c = vecs_sum(a,b)fields = {'x','y','z'};for n = 1:length(fields)    f = fields{n};    c.(f) = a.(f) + b.(f);end
